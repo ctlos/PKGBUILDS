@@ -1,0 +1,5 @@
+*/*
+!*/README.install
+!*/.SRCINFO
+!*/PKGBUILD
+!*/deps.md

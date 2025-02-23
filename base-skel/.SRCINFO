@@ -1,0 +1,13 @@
+pkgbase = base-skel
+	pkgdesc = Settings base
+	pkgver = 1.5.0
+	pkgrel = 4
+	url = https://github.com/ctlos/base-skel
+	arch = any
+	groups = ctlos
+	license = GPL
+	makedepends = git
+	source = git+https://github.com/ctlos/base-skel.git
+	sha256sums = SKIP
+
+pkgname = base-skel
