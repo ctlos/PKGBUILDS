@@ -1,0 +1,4 @@
+# Server
+
+Server = https://raw.githubusercontent.com/ctlos/$repo/master/$arch
+Server = https://git.sr.ht/~cvc/$repo/blob/main/$arch
