@@ -1,0 +1,26 @@
+# Maintainer: Alex Creio <mailcreio at gmail>
+
+srcname=skel
+pkgname=openbox-skel
+pkgdesc='Settings Openbox'
+pkgver=1.4.2
+pkgrel=1
+arch=('any')
+url="https://github.com/ctlos/skel"
+license=('GPL')
+makedepends=('git')
+depends=('openbox' 'obconf' 'base-skel')
+source=("git+$url.git")
+sha256sums=('SKIP')
+install=README.install
+
+package() {
+  cd ${srcdir}/${srcname}/${pkgname}
+  install -dm755 "${pkgdir}/usr/local/bin"
+  install -dm755 "${pkgdir}/usr/local/bin-ob"
+  install -dm755 "${pkgdir}/etc/skel"
+  install -dm755 "${pkgdir}/etc/skel-ob"
+
+  cp -rf usr/local/bin/. "${pkgdir}/usr/local/bin-ob"
+  cp -rf etc/skel/. "$pkgdir/etc/skel-ob"
+}

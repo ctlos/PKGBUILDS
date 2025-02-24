@@ -1,0 +1,27 @@
+# Maintainer: Alex Creio <mailcreio at gmail>
+
+srcname=skel
+pkgname=bspwm-skel
+pkgdesc='Settings Bspwm'
+pkgver=1.5.1
+pkgrel=1
+arch=('any')
+url="https://github.com/ctlos/skel"
+license=('GPL')
+makedepends=('git')
+depends=('bspwm')
+# backup=(etc/sddm.conf)
+source=("git+$url.git")
+sha256sums=('SKIP')
+install=README.install
+
+package() {
+  cd ${srcdir}/${srcname}/${pkgname}
+  install -dm755 "${pkgdir}/usr/local/bin"
+  install -dm755 "${pkgdir}/usr/local/bin-bspwm"
+  install -dm755 "${pkgdir}/etc/skel"
+  install -dm755 "${pkgdir}/etc/skel-bspwm"
+
+  cp -rf usr/local/bin/. "${pkgdir}/usr/local/bin-bspwm"
+  cp -rf etc/skel/. "$pkgdir/etc/skel-bspwm"
+}

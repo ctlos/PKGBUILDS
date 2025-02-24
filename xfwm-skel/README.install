@@ -1,0 +1,26 @@
+_conf() {
+  cp -rf /etc/skel-xfwm/. /etc/skel
+  rm -rf /etc/skel-xfwm
+
+  if [[ ! $(command -v xflock4) ]]; then
+    cp -rf /usr/local/bin-xfwm/xflock4 /usr/local/bin
+  fi
+  cp -rf /usr/local/bin-xfwm/{xfwm_run,slock,rxvt} /usr/local/bin
+  rm -rf /usr/local/bin-xfwm
+}
+_sett() {
+  if command -v sddm >/dev/null; then
+    sed -i "s/Session=.*/Session=xfwm.desktop/" /etc/sddm.conf
+  fi
+
+  echo "QT_QPA_PLATFORMTHEME=qt5ct" > /etc/environment
+}
+
+post_install() {
+  _conf
+  _sett
+}
+
+post_upgrade() {
+  _conf
+}

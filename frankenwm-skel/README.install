@@ -1,0 +1,26 @@
+_conf() {
+  cp -rf /etc/skel-frankenwm/. /etc/skel
+  rm -rf /etc/skel-frankenwm
+
+  if [[ ! $(command -v xflock4) ]]; then
+    cp -rf /usr/local/bin-frankenwm/xflock4 /usr/local/bin
+  fi
+  cp -rf /usr/local/bin-frankenwm/{frankenwm_run,slock,rxvt} /usr/local/bin
+  rm -rf /usr/local/bin-frankenwm
+}
+_sett() {
+  if command -v sddm >/dev/null; then
+    sed -i "s/Session=.*/Session=frankenwm.desktop/" /etc/sddm.conf
+  fi
+
+  echo "QT_QPA_PLATFORMTHEME=qt5ct" > /etc/environment
+}
+
+post_install() {
+  _conf
+  _sett
+}
+
+post_upgrade() {
+  _conf
+}
