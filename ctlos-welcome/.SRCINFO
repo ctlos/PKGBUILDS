@@ -1,0 +1,14 @@
+pkgbase = ctlos-welcome
+	pkgdesc = Welcome screen for Ctlos
+	pkgver = 2.3.0
+	pkgrel = 1
+	url = https://github.com/ctlos/ctlos-welcome
+	arch = any
+	license = GPL
+	makedepends = git
+	depends = python3
+	depends = python-pyqt5
+	source = git+https://github.com/ctlos/ctlos-welcome.git
+	sha256sums = SKIP
+
+pkgname = ctlos-welcome
