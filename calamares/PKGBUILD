@@ -2,7 +2,7 @@
 pkgname=calamares-dev
 pkgver=3.3.13
 _pkgver=3.3.13
-pkgrel=3
+pkgrel=6
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 url="https://github.com/ctlos/calamares"
@@ -61,9 +61,9 @@ sha256sums=('SKIP'
 
 prepare() {
     cp -a ${srcdir}/calamares/* ${srcdir}/calamares-${_pkgver}
-    cp -r ${srcdir}/calamares/settings-offline.conf ${srcdir}/calamares-${_pkgver}/settings.conf
-    cp -r ${srcdir}/calamares/src/modules/packages/packages-offline.conf ${srcdir}/calamares-${_pkgver}/src/modules/packages/packages.conf
-    cp -r ${srcdir}/calamares/src/modules/welcome/welcome-offline.conf ${srcdir}/calamares-${_pkgver}/src/modules/welcome/welcome.conf
+    cp -rf ${srcdir}/calamares/settings-offline.conf ${srcdir}/calamares-${_pkgver}/settings.conf
+    cp -rf ${srcdir}/calamares/src/modules/packages/packages-offline.conf ${srcdir}/calamares-${_pkgver}/src/modules/packages/packages.conf
+    cp -rf ${srcdir}/calamares/src/modules/welcome/welcome-offline.conf ${srcdir}/calamares-${_pkgver}/src/modules/welcome/welcome.conf
 
     rm -rf ${srcdir}/calamares
     cd ${srcdir}/calamares-${_pkgver}
@@ -77,7 +77,6 @@ prepare() {
 
     # change branding
     sed -i -e "s/default/ctlos/g" src/branding/CMakeLists.txt
-
 }
 
 build() {
