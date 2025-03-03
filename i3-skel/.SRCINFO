@@ -1,0 +1,14 @@
+pkgbase = i3-skel
+	pkgdesc = Settings I3 wm
+	pkgver = 1.4.2
+	pkgrel = 2
+	url = https://github.com/ctlos/i3-skel
+	install = README.install
+	arch = any
+	license = GPL
+	makedepends = git
+	depends = i3-gaps
+	source = git+https://github.com/ctlos/i3-skel.git
+	sha256sums = SKIP
+
+pkgname = i3-skel

@@ -1,0 +1,17 @@
+pkgbase = frankenwm-skel
+	pkgdesc = Fast dynamic tiling window manager based on monsterwm-xcb
+	pkgver = 1.3.3
+	pkgrel = 2
+	url = https://github.com/ctlos/frankenwm-skel
+	install = README.install
+	arch = x86_64
+	license = custom:MIT/X
+	makedepends = git
+	depends = libx11
+	depends = xcb-util
+	depends = xcb-util-wm
+	depends = xcb-util-keysyms
+	source = git+https://github.com/ctlos/frankenwm-skel.git
+	md5sums = SKIP
+
+pkgname = frankenwm-skel

@@ -1,0 +1,13 @@
+pkgbase = ctlos-wall
+	pkgdesc = Wallpaper
+	pkgver = 1.2.0
+	pkgrel = 2
+	url = https://github.com/ctlos/ctlos_art
+	arch = any
+	groups = ctlos
+	license = GPL
+	makedepends = git
+	source = git+https://github.com/ctlos/ctlos_art.git
+	sha256sums = SKIP
+
+pkgname = ctlos-wall

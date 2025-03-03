@@ -1,0 +1,14 @@
+pkgbase = gnome-skel
+	pkgdesc = Settings GNOME
+	pkgver = 1.1.1
+	pkgrel = 2
+	url = https://github.com/ctlos/gnome-skel
+	install = README.install
+	arch = any
+	license = GPL
+	makedepends = git
+	depends = gnome-shell
+	source = git+https://github.com/ctlos/gnome-skel.git
+	sha256sums = SKIP
+
+pkgname = gnome-skel

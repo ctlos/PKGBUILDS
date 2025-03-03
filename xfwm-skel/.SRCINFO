@@ -1,0 +1,14 @@
+pkgbase = xfwm-skel
+	pkgdesc = Settings xfwm
+	pkgver = 1.7.2
+	pkgrel = 2
+	url = https://github.com/ctlos/xfwm-skel
+	install = README.install
+	arch = any
+	license = GPL
+	makedepends = git
+	depends = xfwm4
+	source = git+https://github.com/ctlos/xfwm-skel.git
+	sha256sums = SKIP
+
+pkgname = xfwm-skel

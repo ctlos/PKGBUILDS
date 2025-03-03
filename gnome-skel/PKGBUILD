@@ -1,12 +1,11 @@
 # Maintainer: Alex Creio <mailcreio at gmail>
 
-srcname=skel
 pkgname=gnome-skel
 pkgdesc='Settings GNOME'
 pkgver=1.1.1
-pkgrel=1
+pkgrel=2
 arch=('any')
-url="https://github.com/ctlos/skel"
+url="https://github.com/ctlos/${pkgname}"
 license=('GPL')
 makedepends=('git')
 depends=('gnome-shell')
@@ -16,7 +15,7 @@ sha256sums=('SKIP')
 install=README.install
 
 package() {
-  cd ${srcdir}/${srcname}/${pkgname}
+  cd ${srcdir}/${pkgname}
   install -dm755 "${pkgdir}/etc/skel"
   install -dm755 "${pkgdir}/etc/skel-gnome"
 

@@ -1,0 +1,14 @@
+pkgbase = bspwm-skel
+	pkgdesc = Settings Bspwm
+	pkgver = 1.5.1
+	pkgrel = 2
+	url = https://github.com/ctlos/bspwm-skel
+	install = README.install
+	arch = any
+	license = GPL
+	makedepends = git
+	depends = bspwm
+	source = git+https://github.com/ctlos/bspwm-skel.git
+	sha256sums = SKIP
+
+pkgname = bspwm-skel

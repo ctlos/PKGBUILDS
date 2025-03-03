@@ -1,12 +1,11 @@
 # Maintainer: Alex Creio <mailcreio at gmail>
 
-srcname=skel
 pkgname=sway-skel
 pkgdesc='Settings sway wm'
 pkgver=1.4.2
-pkgrel=1
+pkgrel=2
 arch=('any')
-url="https://github.com/ctlos/skel"
+url="https://github.com/ctlos/sway-skel"
 license=('GPL')
 makedepends=('git')
 depends=('sway')
@@ -15,7 +14,7 @@ sha256sums=('SKIP')
 install=README.install
 
 package() {
-  cd ${srcdir}/${srcname}/${pkgname}
+  cd ${srcdir}/${pkgname}
   install -dm755 "${pkgdir}/usr/local/bin"
   install -dm755 "${pkgdir}/usr/local/bin-sway"
   install -dm755 "${pkgdir}/etc/skel"

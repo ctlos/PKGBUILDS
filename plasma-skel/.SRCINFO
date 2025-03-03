@@ -1,0 +1,18 @@
+pkgbase = plasma-skel
+	pkgdesc = Settings kde/plasma
+	pkgver = 1.0.3
+	pkgrel = 2
+	url = https://github.com/ctlos/plasma-skel
+	install = README.install
+	arch = any
+	license = GPL
+	makedepends = git
+	depends = plasma-desktop
+	depends = libdbusmenu-glib
+	depends = libdbusmenu-gtk3
+	depends = libdbusmenu-gtk2
+	depends = libdbusmenu-qt5
+	source = git+https://github.com/ctlos/plasma-skel.git
+	sha256sums = SKIP
+
+pkgname = plasma-skel

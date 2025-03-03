@@ -1,12 +1,11 @@
 # Maintainer: Alex Creio <mailcreio at gmail>
 
-srcname=skel
 pkgname=i3-skel
 pkgdesc='Settings I3 wm'
 pkgver=1.4.2
-pkgrel=1
+pkgrel=2
 arch=('any')
-url="https://github.com/ctlos/skel"
+url="https://github.com/ctlos/${pkgname}"
 license=('GPL')
 makedepends=('git')
 depends=('i3-gaps')
@@ -15,7 +14,7 @@ sha256sums=('SKIP')
 install=README.install
 
 package() {
-  cd ${srcdir}/${srcname}/${pkgname}
+  cd ${srcdir}/${pkgname}
   install -dm755 "${pkgdir}/usr/local/bin"
   install -dm755 "${pkgdir}/usr/local/bin-i3"
   install -dm755 "${pkgdir}/etc/skel"

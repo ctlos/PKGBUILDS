@@ -1,13 +1,12 @@
 # Maintainer: Alex Creio <mailcreio at gmail>
 
-srcname=skel
 pkgname=frankenwm-skel
 _pkgname=frankenwm
 pkgver=1.3.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Fast dynamic tiling window manager based on monsterwm-xcb'
 arch=('x86_64')
-url="https://github.com/ctlos/skel"
+url="https://github.com/ctlos/${pkgname}"
 license=('custom:MIT/X')
 makedepends=('git')
 depends=('libx11' 'xcb-util' 'xcb-util-wm' 'xcb-util-keysyms')
@@ -16,7 +15,7 @@ install=README.install
 source=("git+$url.git")
 
 prepare() {
-  cd ${srcdir}/${srcname}/${pkgname}/franken
+  cd ${srcdir}/${pkgname}/franken
 
   if [ -e $startdir/config.h ]; then
     msg "using custom config.h"
@@ -27,12 +26,12 @@ prepare() {
 }
 
 build() {
-  cd ${srcdir}/${srcname}/${pkgname}/franken
+  cd ${srcdir}/${pkgname}/franken
   make
 }
 
 package() {
-  cd ${srcdir}/${srcname}/${pkgname}
+  cd ${srcdir}/${pkgname}
   install -dm755 "${pkgdir}/usr/local/bin"
   install -dm755 "${pkgdir}/usr/local/bin-$_pkgname"
   install -dm755 "${pkgdir}/etc/skel"
@@ -44,7 +43,7 @@ package() {
   cp -rf franken/. "$pkgdir/etc/skel-$_pkgname/.config/$_pkgname/src"
   cp -rf usr/share/xsessions/$_pkgname.desktop "${pkgdir}/usr/share/xsessions/$_pkgname.desktop"
 
-  cd ${srcdir}/${srcname}/${pkgname}/franken
+  cd ${srcdir}/${pkgname}/franken
   make PREFIX=/usr DESTDIR="${pkgdir}" install
 
   install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"

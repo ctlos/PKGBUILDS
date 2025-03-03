@@ -1,12 +1,11 @@
 # Maintainer: Alex Creio <mailcreio at gmail>
 
-srcname=skel
 pkgname=xfwm-skel
 pkgdesc='Settings xfwm'
 pkgver=1.7.2
-pkgrel=1
+pkgrel=2
 arch=('any')
-url="https://github.com/ctlos/skel"
+url="https://github.com/ctlos/xfwm-skel"
 license=('GPL')
 makedepends=('git')
 depends=('xfwm4')
@@ -15,7 +14,7 @@ sha256sums=('SKIP')
 install=README.install
 
 package() {
-  cd ${srcdir}/${srcname}/${pkgname}
+  cd ${srcdir}/${pkgname}
   install -dm755 "${pkgdir}/usr/local/bin"
   install -dm755 "${pkgdir}/usr/local/bin-xfwm"
   install -dm755 "${pkgdir}/etc/skel"
