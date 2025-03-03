@@ -1,12 +1,11 @@
 # Maintainer: Alex Creio <mailcreio at gmail>
 
-srcname=skel
 pkgname=xfce-skel
 pkgdesc='Settings xfce'
 pkgver=2.3.3
-pkgrel=1
+pkgrel=2
 arch=('any')
-url="https://github.com/ctlos/skel"
+url="https://github.com/ctlos/xfce-skel"
 license=('GPL')
 makedepends=('git')
 depends=('xfwm4')
@@ -15,7 +14,7 @@ sha256sums=('SKIP')
 install=README.install
 
 package() {
-  cd ${srcdir}/${srcname}/${pkgname}
+  cd ${srcdir}
   install -dm755 "$pkgdir/etc/skel"
   install -dm755 "$pkgdir/etc/skel-xfce"
 
