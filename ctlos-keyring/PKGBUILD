@@ -2,22 +2,17 @@
 
 pkgname=ctlos-keyring
 pkgver=stable
-pkgrel=2
+pkgrel=3
 pkgdesc='ctlos PGP keyring'
 arch=('x86_64')
 url='https://github.com/ctlos/ctlos-keyring'
 license=('GPL')
+makedepends=('git')
+source=("git+$url.git")
+sha256sums=('SKIP')
 install="README.install"
-source=('Makefile'
-        'ctlos.gpg'
-        'ctlos-revoked'
-        'ctlos-trusted')
-sha256sums=('SKIP'
-            'SKIP'
-            'SKIP'
-            'SKIP')
 
 package() {
-  cd "${srcdir}"
+  cd ${srcdir}/${pkgname}
   make PREFIX=/usr DESTDIR=${pkgdir} install
 }

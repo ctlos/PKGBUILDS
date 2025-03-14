@@ -1,0 +1,13 @@
+pkgbase = ctlos-keyring
+	pkgdesc = ctlos PGP keyring
+	pkgver = stable
+	pkgrel = 3
+	url = https://github.com/ctlos/ctlos-keyring
+	install = README.install
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	source = git+https://github.com/ctlos/ctlos-keyring.git
+	sha256sums = SKIP
+
+pkgname = ctlos-keyring
