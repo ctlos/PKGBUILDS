@@ -1,14 +1,14 @@
 pkgbase = openbox-skel
 	pkgdesc = Settings Openbox
-	pkgver = 1.4.2
-	pkgrel = 2
+	pkgver = 1.4.4
+	pkgrel = 1
 	url = https://github.com/ctlos/openbox-skel
 	install = README.install
 	arch = any
 	license = GPL
 	makedepends = git
 	depends = openbox
-	depends = obconf
+	depends = obconf-qt
 	depends = base-skel
 	source = git+https://github.com/ctlos/openbox-skel.git
 	sha256sums = SKIP
