@@ -2,8 +2,8 @@
 
 pkgname=sway-skel
 pkgdesc='Settings sway wm'
-pkgver=1.4.2
-pkgrel=2
+pkgver=1.4.3
+pkgrel=1
 arch=('any')
 url="https://github.com/ctlos/sway-skel"
 license=('GPL')

@@ -2,8 +2,8 @@
 
 pkgname=base-skel
 pkgdesc='Settings base'
-pkgver=1.5.0
-pkgrel=5
+pkgver=1.5.1
+pkgrel=1
 arch=('any')
 url="https://github.com/ctlos/${pkgname}"
 license=('GPL')

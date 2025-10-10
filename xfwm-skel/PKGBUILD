@@ -2,8 +2,8 @@
 
 pkgname=xfwm-skel
 pkgdesc='Settings xfwm'
-pkgver=1.7.2
-pkgrel=2
+pkgver=1.7.3
+pkgrel=1
 arch=('any')
 url="https://github.com/ctlos/xfwm-skel"
 license=('GPL')

@@ -2,13 +2,13 @@
 
 pkgname=openbox-skel
 pkgdesc='Settings Openbox'
-pkgver=1.4.2
-pkgrel=2
+pkgver=1.4.1
+pkgrel=1
 arch=('any')
 url="https://github.com/ctlos/${pkgname}"
 license=('GPL')
 makedepends=('git')
-depends=('openbox' 'obconf' 'base-skel')
+depends=('openbox' 'obconf-qt' 'base-skel')
 source=("git+$url.git")
 sha256sums=('SKIP')
 install=README.install
