@@ -2,8 +2,8 @@
 
 pkgname=xfce-skel
 pkgdesc='Settings xfce'
-pkgver=2.3.4
-pkgrel=1
+pkgver=2.3.5
+pkgrel=0
 arch=('any')
 url="https://github.com/ctlos/xfce-skel"
 license=('GPL')

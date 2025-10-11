@@ -1,8 +1,8 @@
 # Ctlos Calamares
 pkgname=calamares-dev
-pkgver=3.3.13
-_pkgver=3.3.13
-pkgrel=6
+pkgver=3.4.0
+_pkgver=3.4.0
+pkgrel=0
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 url="https://github.com/ctlos/calamares"
@@ -17,6 +17,7 @@ depends=(
   'efibootmgr'
   'gptfdisk'
   'gtk-update-icon-cache'
+  'hwinfo'
   'icu'
   'kconfig'
   'kcoreaddons'
@@ -34,7 +35,7 @@ depends=(
   'solid'
   'squashfs-tools'
   'yaml-cpp'
-  )
+)
 
 makedepends=(
   'boost'
@@ -53,7 +54,7 @@ backup=('usr/share/calamares/modules/bootloader.conf'
         'usr/share/calamares/modules/initcpio.conf'
         'usr/share/calamares/modules/unpackfs.conf')
 
-source+=("https://github.com/calamares/calamares/releases/download/v${_pkgver}/calamares-${_pkgver}.tar.gz"
+source+=("https://codeberg.org/Calamares/calamares/releases/download/v${_pkgver}/calamares-${_pkgver}.tar.gz"
         git+https://github.com/ctlos/calamares#branch=dev)
 
 sha256sums=('SKIP'
@@ -98,7 +99,7 @@ build() {
         openrcdmcryptcfg packagechooserq fsresizer \
         rawfs mkinitfs contextualprocess interactiveterminal \
         plasmalnf services-openrc \
-        summaryq tracking usersq webview welcomeq"
+        summaryq tracking usersq webview welcomeq zfs zfshostid"
 
     cmake --build build --parallel 18
 }

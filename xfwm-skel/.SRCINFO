@@ -1,7 +1,7 @@
 pkgbase = xfwm-skel
 	pkgdesc = Settings xfwm
-	pkgver = 1.7.2
-	pkgrel = 2
+	pkgver = 1.7.4
+	pkgrel = 0
 	url = https://github.com/ctlos/xfwm-skel
 	install = README.install
 	arch = any

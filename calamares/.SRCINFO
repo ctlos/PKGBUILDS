@@ -1,7 +1,7 @@
 pkgbase = calamares-dev
 	pkgdesc = Distribution-independent installer framework
-	pkgver = 3.3.13
-	pkgrel = 6
+	pkgver = 3.4.0
+	pkgrel = 0
 	url = https://github.com/ctlos/calamares
 	arch = i686
 	arch = x86_64
@@ -22,6 +22,7 @@ pkgbase = calamares-dev
 	depends = efibootmgr
 	depends = gptfdisk
 	depends = gtk-update-icon-cache
+	depends = hwinfo
 	depends = icu
 	depends = kconfig
 	depends = kcoreaddons
@@ -45,7 +46,7 @@ pkgbase = calamares-dev
 	backup = usr/share/calamares/modules/displaymanager.conf
 	backup = usr/share/calamares/modules/initcpio.conf
 	backup = usr/share/calamares/modules/unpackfs.conf
-	source = https://github.com/calamares/calamares/releases/download/v3.3.13/calamares-3.3.13.tar.gz
+	source = https://codeberg.org/Calamares/calamares/releases/download/v3.4.0/calamares-3.4.0.tar.gz
 	source = git+https://github.com/ctlos/calamares#branch=dev
 	sha256sums = SKIP
 	sha256sums = SKIP
