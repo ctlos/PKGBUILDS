@@ -1,7 +1,7 @@
 pkgbase = ctlos-wall
 	pkgdesc = Wallpaper
-	pkgver = 1.2.0
-	pkgrel = 2
+	pkgver = 1.2.1
+	pkgrel = 0
 	url = https://github.com/ctlos/ctlos_art
 	arch = any
 	groups = ctlos

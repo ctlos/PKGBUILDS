@@ -30,7 +30,7 @@ thunar-volman
 tumbler
 file-roller
 flameshot
-#leafpad
+mousepad
 pavucontrol
 viewnior
 djvulibre
