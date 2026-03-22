@@ -1,6 +1,6 @@
 pkgbase = calamares-dev
 	pkgdesc = Distribution-independent installer framework
-	pkgver = 3.4.0
+	pkgver = 3.4.2
 	pkgrel = 0
 	url = https://github.com/ctlos/calamares
 	arch = i686
@@ -46,7 +46,7 @@ pkgbase = calamares-dev
 	backup = usr/share/calamares/modules/displaymanager.conf
 	backup = usr/share/calamares/modules/initcpio.conf
 	backup = usr/share/calamares/modules/unpackfs.conf
-	source = https://codeberg.org/Calamares/calamares/releases/download/v3.4.0/calamares-3.4.0.tar.gz
+	source = https://codeberg.org/Calamares/calamares/releases/download/v3.4.2/calamares-3.4.2.tar.gz
 	source = git+https://github.com/ctlos/calamares#branch=dev
 	sha256sums = SKIP
 	sha256sums = SKIP
