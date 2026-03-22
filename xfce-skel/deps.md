@@ -2,6 +2,7 @@ ctlos-keyring
 polkit-gnome
 alacarte
 catfish
+gedit
 galculator
 gnome-multi-writer
 network-manager-applet
@@ -29,7 +30,7 @@ thunar-volman
 tumbler
 file-roller
 flameshot
-leafpad
+#leafpad
 pavucontrol
 viewnior
 djvulibre

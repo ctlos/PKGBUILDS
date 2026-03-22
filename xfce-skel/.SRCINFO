@@ -1,6 +1,6 @@
 pkgbase = xfce-skel
 	pkgdesc = Settings xfce
-	pkgver = 2.3.5
+	pkgver = 2.3.6
 	pkgrel = 0
 	url = https://github.com/ctlos/xfce-skel
 	install = README.install
