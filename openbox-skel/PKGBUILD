@@ -3,7 +3,7 @@
 pkgname=openbox-skel
 pkgdesc='Settings Openbox'
 pkgver=1.4.4
-pkgrel=1
+pkgrel=2
 arch=('any')
 url="https://github.com/ctlos/${pkgname}"
 license=('GPL')

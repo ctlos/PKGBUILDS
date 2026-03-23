@@ -6,8 +6,8 @@ gsimplecal
 jgmenu
 lxmenu-data
 lxappearance
-nitrogen
-obconf
+xfdesktop
+obconf-qt
 lxrandr
 thunar
 thunar-archive-plugin
@@ -32,9 +32,8 @@ udisks2
 udiskie
 volumeicon
 alttab-git
-obkey-git
 skippy-xd-git
-tint2-git
+tint2
 jsoncpp
 polybar-git
 betterlockscreen
