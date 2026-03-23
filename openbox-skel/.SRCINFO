@@ -1,7 +1,7 @@
 pkgbase = openbox-skel
 	pkgdesc = Settings Openbox
 	pkgver = 1.4.4
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/ctlos/openbox-skel
 	install = README.install
 	arch = any
