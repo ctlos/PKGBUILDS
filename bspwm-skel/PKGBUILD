@@ -2,7 +2,7 @@
 
 pkgname=bspwm-skel
 pkgdesc='Settings Bspwm'
-pkgver=1.5.4
+pkgver=1.5.5
 pkgrel=1
 arch=('any')
 url="https://github.com/ctlos/${pkgname}"
