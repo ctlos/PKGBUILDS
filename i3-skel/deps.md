@@ -4,7 +4,8 @@ i3-gaps
 galculator
 gsimplecal
 lxappearance
-nitrogen
+#nitrogen
+hsetroot
 lxrandr
 thunar
 thunar-archive-plugin

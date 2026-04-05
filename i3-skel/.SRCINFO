@@ -1,6 +1,6 @@
 pkgbase = i3-skel
 	pkgdesc = Settings I3 wm
-	pkgver = 1.4.5
+	pkgver = 1.4.6
 	pkgrel = 1
 	url = https://github.com/ctlos/i3-skel
 	install = README.install
