@@ -1,7 +1,7 @@
 pkgbase = base-skel
 	pkgdesc = Settings base
-	pkgver = 1.5.5
-	pkgrel = 2
+	pkgver = 1.5.6
+	pkgrel = 1
 	url = https://github.com/ctlos/base-skel
 	arch = any
 	groups = ctlos
