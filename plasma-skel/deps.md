@@ -19,7 +19,8 @@ gwenview
 fwupd
 
 extra-cmake-modules
-applet-window-buttons-git
+#applet-window-buttons-git
+plasma-applet-window-buttons
 libdbusmenu-glib
 libdbusmenu-gtk3
 libdbusmenu-gtk2
@@ -27,7 +28,7 @@ libdbusmenu-qt5
 lib32-libdbusmenu-glib
 lib32-libdbusmenu-gtk2
 
-firefox-appmenu-bin
+#firefox-appmenu-bin
 
 # Plasma skel
 
@@ -52,7 +53,7 @@ global menu deps
 yay -S libdbusmenu-glib libdbusmenu-gtk3 libdbusmenu-gtk2 libdbusmenu-qt5 lib32-libdbusmenu-glib lib32-libdbusmenu-gtk2
 ```
 
-firefox global menu
+firefox global menu??
 
 ```bash
 yay -S firefox-appmenu-bin
