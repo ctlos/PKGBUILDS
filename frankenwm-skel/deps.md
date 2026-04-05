@@ -14,7 +14,8 @@ ueberzug
 gsimplecal
 lxappearance
 lxrandr
-nitrogen
+#nitrogen
+hsetroot
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
