@@ -10,11 +10,12 @@ _sett() {
   fi
 
   if command -v gdm >/dev/null; then
-    systemctl disable --now sddm && pacman -Rnsdd sddm --noconfirm
+    rm /etc/systemd/system/display-manager.service
+    pacman -Rnsdd sddm --noconfirm
     echo '' > /etc/motd
     mv /usr/share/pixmaps/archlinux-logo-text-dark.{svg,svg.bak}
 
-    tee /etc/gdm/custom.conf << 'EOF'
+    tee /etc/gdm/custom.conf <<EOF
 # GDM configuration storage
 
 [daemon]
