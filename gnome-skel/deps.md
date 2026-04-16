@@ -2,11 +2,12 @@ gnome-shell
 gnome-shell-extensions
 chrome-gnome-shell
 firefox-extension-gnome-shell-integration
-gnome-shell-extension-just-perfection-desktop-git
+gnome-shell-extension-dash-to-panel
+gnome-shell-extension-just-perfection-desktop
 gnome-control-center
 gnome-themes-extra
 gnome-menus
-tilix
+gnome-terminal
 gnome-tweaks
 nautilus
 nautilus-sendto

@@ -9,7 +9,34 @@ _sett() {
     sed -i "s/Session=.*/Session=gnome.desktop/" /etc/sddm.conf
   fi
 
-  echo "QT_QPA_PLATFORMTHEME=qt5ct" > /etc/environment
+  if command -v gdm >/dev/null; then
+    systemctl disable --now sddm && pacman -Rns sddm --noconfirm
+    echo '' > /etc/motd
+    mv /usr/share/pixmaps/archlinux-logo-text-dark.{svg,svg.bak}
+
+    tee /etc/gdm/custom.conf << 'EOF'
+# GDM configuration storage
+
+[daemon]
+AutomaticLogin=liveuser
+AutomaticLoginEnable=True
+
+[security]
+
+[debug]
+# Uncomment the line below to turn on debugging
+#Enable=true
+EOF
+
+    tee /etc/environment <<EOF
+QT_QPA_PLATFORMTHEME=qt5ct
+QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+QT_QPA_PLATFORM=xcb
+GTK_THEME=Colloid-Dark-Compact-Catppuccin
+EOF
+  fi
+
+  # echo "QT_QPA_PLATFORMTHEME=qt5ct" > /etc/environment
 }
 
 post_install() {
@@ -27,7 +54,7 @@ post_install() {
 
 post_upgrade() {
   # post_install $1
-  _conf
+  # _conf
 }
 
 #post_remove() {
