@@ -10,7 +10,7 @@ _sett() {
   fi
 
   if command -v gdm >/dev/null; then
-    systemctl disable --now sddm && pacman -Rns sddm --noconfirm
+    systemctl disable --now sddm && pacman -Rnsdd sddm --noconfirm
     echo '' > /etc/motd
     mv /usr/share/pixmaps/archlinux-logo-text-dark.{svg,svg.bak}
 

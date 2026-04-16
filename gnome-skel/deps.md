@@ -1,4 +1,5 @@
 gnome-shell
+gdm
 gnome-shell-extensions
 chrome-gnome-shell
 firefox-extension-gnome-shell-integration
