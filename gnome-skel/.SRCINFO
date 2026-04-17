@@ -1,6 +1,6 @@
 pkgbase = gnome-skel
 	pkgdesc = Settings GNOME
-	pkgver = 1.2.3
+	pkgver = 1.2.4
 	pkgrel = 1
 	url = https://github.com/ctlos/gnome-skel
 	install = README.install

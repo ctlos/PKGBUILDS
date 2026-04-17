@@ -1,8 +1,8 @@
 gnome-shell
 gdm
 gnome-shell-extensions
-chrome-gnome-shell
 firefox-extension-gnome-shell-integration
+gnome-browser-connector
 gnome-shell-extension-dash-to-panel
 gnome-shell-extension-just-perfection-desktop
 gnome-control-center
