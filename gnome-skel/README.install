@@ -1,4 +1,5 @@
 _conf() {
+  mv /etc/skel-gnome/.config/ctlos.svg /usr/share/icons
   cp -rf /etc/skel-gnome/. /etc/skel
   rm -rf /etc/skel-gnome
 }
@@ -11,7 +12,12 @@ _sett() {
 
   if command -v gdm >/dev/null; then
     echo '' > /etc/motd
-    mv /usr/share/pixmaps/archlinux-logo-text-dark.{svg,svg.bak}
+    # mv /usr/share/pixmaps/archlinux-logo-text-dark.{svg,svg.bak}
+
+    tee /usr/share/glib-2.0/schemas/zz_org.ctlos.gdm.gschema.override <<EOF
+[org.gnome.login-screen]
+logo='/usr/share/icons/ctlos.svg'
+EOF
 
     tee /etc/gdm/custom.conf <<EOF
 # GDM configuration storage
@@ -51,10 +57,10 @@ post_install() {
   # fi
 }
 
-post_upgrade() {
+# post_upgrade() {
   # post_install $1
   # _conf
-}
+# }
 
 #post_remove() {
 #  rm -rf /usr/share/backgrounds/xfce
