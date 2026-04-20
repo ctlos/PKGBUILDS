@@ -1,6 +1,6 @@
 pkgbase = bspwm-skel
 	pkgdesc = Settings Bspwm
-	pkgver = 1.5.8
+	pkgver = 1.5.9
 	pkgrel = 1
 	url = https://github.com/ctlos/bspwm-skel
 	install = README.install
