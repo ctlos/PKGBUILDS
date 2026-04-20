@@ -2,7 +2,7 @@
 
 pkgname=i3-skel
 pkgdesc='Settings I3 wm'
-pkgver=1.4.8
+pkgver=1.4.9
 pkgrel=1
 arch=('any')
 url="https://github.com/ctlos/${pkgname}"

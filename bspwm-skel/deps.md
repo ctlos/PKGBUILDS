@@ -1,3 +1,4 @@
+alacritty
 polkit-gnome
 galculator
 network-manager-applet
@@ -34,5 +35,3 @@ betterlockscreen
 tint2-git
 polybar-git
 jsoncpp
-rxvt-unicode-patched
-urxvt-perls

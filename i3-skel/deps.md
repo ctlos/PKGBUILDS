@@ -1,3 +1,4 @@
+alacritty
 polkit-gnome
 network-manager-applet
 i3-gaps
@@ -13,7 +14,6 @@ thunar-media-tags-plugin
 thunar-volman
 tumbler
 xfce4-power-manager
-xfce4-terminal
 file-roller
 flameshot
 leafpad

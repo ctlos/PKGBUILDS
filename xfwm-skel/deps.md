@@ -1,3 +1,4 @@
+alacritty
 polkit-gnome
 network-manager-applet
 xfce4-power-manager
@@ -30,5 +31,3 @@ betterlockscreen
 tint2-git
 polybar-git
 jsoncpp
-rxvt-unicode-patched
-urxvt-perls

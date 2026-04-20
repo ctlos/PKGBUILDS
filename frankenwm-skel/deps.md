@@ -1,3 +1,4 @@
+alacritty
 xcb-util-wm
 xcb-util-keysyms
 polkit-gnome
@@ -34,6 +35,4 @@ betterlockscreen
 tint2-git
 polybar-git
 jsoncpp
-rxvt-unicode-patched
-urxvt-perls
 sxhkd
