@@ -14,6 +14,7 @@ _sett() {
   fi
 
   echo "QT_QPA_PLATFORMTHEME=qt5ct" > /etc/environment
+  echo "GTK_THEME=Ctlos-Dark" >> /etc/environment
 }
 
 post_install() {
